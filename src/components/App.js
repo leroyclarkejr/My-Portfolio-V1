@@ -5,13 +5,7 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   NavLink,
-// } from "react-router-dom";
-// import Nav from "./Nav.js";
+
 import Main from "./Main.js";
 import Projects from "./Projects.js";
 import Contact from "./Contact.js";
@@ -24,19 +18,19 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div id="nav">
-          <NavLink to="/" className="nav-links home">
+        <div id="nav" className="">
+          <NavLink to="/" className="nav-links home nav-appear">
             Home
           </NavLink>
 
-          <NavLink to="/projects" className="nav-links projects">
+          <NavLink to="/projects" className="nav-links projects nav-appear">
             Projects
           </NavLink>
 
-          <NavLink to="/contact" className="nav-links contact">
+          <NavLink to="/contact" className="nav-links contact nav-appear">
             Contact
           </NavLink>
-          <div className="nav-links social">Social</div>
+          <div className="nav-links social nav-appear">Social</div>
 
           <Switch>
             <Route exact path="/">

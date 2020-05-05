@@ -7,6 +7,53 @@ $saphire: #09678c;
 $green: #21dd9b;
 $almond: #fbf0cd;
 
+@keyframes navFadeIn {
+  0% {
+    opacity: 0;
+    //   transform: translateY(50px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-appear {
+  opacity: 0;
+  /* here we include the animation name */
+  animation-name: navFadeIn;
+  /* set a duration and delay */
+  animation-duration: 1s;
+  animation-delay: 2s;
+  /* make sure the end state stays the same */
+  animation-fill-mode: forwards;
+}
+.appear {
+  /* here we set the opacity as a starting point*/
+  opacity: 0;
+  /* here we include the animation name */
+  animation-name: fadeIn;
+  /* set a duration and delay */
+  animation-duration: 2s;
+  animation-delay: 1s;
+  /* make sure the end state stays the same */
+  animation-fill-mode: forwards;
+}
+
 body {
   font-family: "Roboto Mono", monospace;
   text-transform: capitalize;
@@ -18,12 +65,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  // transition: background-color 0.5s;
-}
-
-.test {
-  background-color: red;
-  max-width: 200px;
+  transition: background-color 0.5s;
 }
 
 .nav-links {
@@ -128,18 +170,20 @@ body {
 
 #projects {
   display: flex;
+  flex-wrap: wrap;
   width: 60vw;
   height: 80vh;
   .main-projects {
     background-color: $white;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     color: $dark-blue;
     width: 350px;
     height: 500px;
     border-radius: 3px;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
     padding: 20px;
     text-align: center;
@@ -161,6 +205,9 @@ body {
       cursor: pointer;
       padding: 10px;
       border: 2px solid black;
+    }
+    .cta {
+      align-self: bottom;
     }
   }
 }

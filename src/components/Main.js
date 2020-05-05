@@ -6,6 +6,7 @@ import nextIcon from "../assets/next.png";
 import randomIcon from "../assets/shuffle.png";
 
 let pageNumber = 0;
+const bodyTag = document.querySelector("body");
 
 const content = [
   //you can fill ARRAYS with OBJECTS by using curly brackets
@@ -57,6 +58,7 @@ class Main extends React.Component {
     if (pageNumber > content.length - 1) {
       pageNumber = 0;
     }
+    bodyTag.style.backgroundColor = content[pageNumber].background;
 
     this.setState({
       content: `${content[pageNumber].copy}`,
@@ -70,6 +72,7 @@ class Main extends React.Component {
     if (pageNumber < 0) {
       pageNumber = content.length - 1;
     }
+    bodyTag.style.backgroundColor = content[pageNumber].background;
 
     this.setState({
       content: `${content[pageNumber].copy}`,
@@ -97,7 +100,7 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <div id="main-content">
+        <div id="main-content" className="appear">
           <div className="main-content data-tilt">
             <img className="tilt-s" src={me} alt="Beautiful Leroy Clarke Jr." />
             <h1 className="tilt-m">Leroy Clarke Jr. is...</h1>

@@ -15,11 +15,11 @@ class Project extends React.Component {
         <h3 className="tilt-m">{this.props.title}</h3>
         <p className="tilt-m">{this.props.description}</p>
 
-        <p className="tilt-m">
+        <div className="tilt-m cta">
           <button href={this.props.url}>View Live Site</button>
           <span>|</span>
           <button href={this.props.code}>Source Code</button>
-        </p>
+        </div>
       </div>
     );
   }

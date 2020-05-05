@@ -1,14 +1,25 @@
-const projectdata = [
+const pages = [
+  //you can fill ARRAYS with OBJECTS by using curly brackets
   {
-    title: "A day in Jamaica",
-    description: "Moments captued over a single day in Jamaica.",
-    url: "https://ldcjrstudio.github.io/Day-in-Jamaica/index.html",
-    code: "https://github.com/ldcjrStudio/Day-in-Jamaica",
+    copy: "A Front End Web Developer specializing in pixel perfect web design.",
+    background: "#bcced2",
+    circle: "#8D1614",
   },
   {
-    title: "Furneauxs",
-    description: "A mobile resonsive site created for an emerging flower shop.",
-    url: "https://ldcjrstudio.github.io/furneauxs/",
-    code: "https://github.com/ldcjrStudio/furneauxs",
+    copy:
+      "Extremely knowledgeable about HTML5, CSS3, JavaScript ES6, & Ruby On Rails.",
+    background: "#09678c",
+    circle: "#001527",
+  },
+  {
+    copy:
+      "Skilled in utilizing Bootstrap, SCSS, JQuery, React.JS, NPM, Git, Sketch, Photoshop, & Visual Studio Code.",
+    background: "#fbf0cd",
+    circle: "#04445C",
+  },
+  {
+    copy: "Inviting you to view his recent projects, <a>here.</a>",
+    background: "#21dd9b",
+    circle: "#b472e6",
   },
 ];
