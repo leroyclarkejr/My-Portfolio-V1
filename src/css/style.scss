@@ -101,37 +101,37 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   flex-direction: column;
-
   background-color: $white;
   color: $dark-blue;
   min-height: 500px;
-  width: 60vw;
-  height: 80vh;
+  max-height: 60vh;
+  max-width: 900px;
+  padding: 40px;
   border-radius: 3px;
   z-index: 1;
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
-}
 
-.main-content img {
-  width: 200px;
-  border-radius: 50%;
-}
+  img {
+    width: 200px;
+    border-radius: 50%;
+  }
 
-.main-content h1 {
-  padding-top: 20px;
-  font-size: 36px;
-}
-.main-content p {
-  font-style: italic;
-  font-weight: 00i;
-  padding-top: 20px;
-  font-size: 24px;
-  height: 150px;
-  max-width: 500px;
-  text-align: center;
+  h1 {
+    padding-top: 20px;
+    font-size: 28px;
+  }
+  p {
+    font-style: italic;
+    font-weight: 00i;
+    padding-top: 20px;
+    font-size: 24px;
+    height: 150px;
+    max-width: 500px;
+    text-align: center;
+  }
 }
 
 .data-tilt {
@@ -170,27 +170,30 @@ body {
 
 #projects {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 60vw;
-  height: 80vh;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+
   .main-projects {
     background-color: $white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     color: $dark-blue;
-    width: 350px;
-    height: 500px;
+    max-width: 300px;
+    max-height: 500px;
     border-radius: 3px;
     z-index: 2;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     margin: 20px;
 
     h3 {
-      font-size: 28px;
+      font-size: 24px;
       padding-top: 20px;
       padding-bottom: 20px;
     }
@@ -198,8 +201,14 @@ body {
       padding-bottom: 20px;
     }
     img {
+      // display: block;
       width: 100px;
-      display: block;
+      height: 100px;
+    }
+
+    .project-image {
+      width: 200px;
+      background-size: contain;
     }
     button {
       cursor: pointer;

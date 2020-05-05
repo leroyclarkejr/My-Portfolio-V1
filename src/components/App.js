@@ -9,6 +9,7 @@ import {
 import Main from "./Main.js";
 import Projects from "./Projects.js";
 import Contact from "./Contact.js";
+import JA from "../assets/JA.png";
 
 class App extends React.Component {
   // constructor(props) {
