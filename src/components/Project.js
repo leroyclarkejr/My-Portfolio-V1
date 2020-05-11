@@ -1,11 +1,13 @@
 import React from "react";
-import ja from "../assets/JA.png";
-import fur from "../assets/fur.png";
 
 class Project extends React.Component {
   constructor(props) {
     super(props);
   }
+
+  // openUrlLink() {
+  //   window.open(`${this.props.url}`);
+  // }
 
   render() {
     return (
@@ -13,13 +15,17 @@ class Project extends React.Component {
         <img className="project-image tilt-s" src={this.props.image}></img>
 
         <div className="content"></div>
-        <h3 className="tilt-m">{this.props.title}</h3>
-        <p className="tilt-m">{this.props.description}</p>
+        <h3 className="tilt-s">{this.props.title}</h3>
+        <p className="tilt-s">{this.props.description}</p>
 
-        <div className="tilt-m cta">
-          <button href={this.props.url}>View Live Site</button>
+        <div className="tilt-s cta">
+          <button onClick={() => window.open(`${this.props.url}`)}>
+            View Live Site
+          </button>
           <span>|</span>
-          <button href={this.props.code}>Source Code</button>
+          <button onClick={() => window.open(`${this.props.code}`)}>
+            Source Code
+          </button>
         </div>
       </div>
     );

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:500i,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,400&display=swap");
 $white: #fdfffc;
 $dark-blue: #011627;
 $bleu: #bcced2;
@@ -56,7 +55,7 @@ $almond: #fbf0cd;
 
 body {
   font-family: "Roboto Mono", monospace;
-  text-transform: capitalize;
+  // text-transform: capitalize;
   color: #011627;
   width: 100%;
   height: 100vh;
@@ -77,6 +76,7 @@ body {
 }
 
 #nav {
+  z-index: 10;
   .home {
     position: fixed;
     top: 0;
@@ -96,6 +96,9 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
+  }
+  .selected {
+    border-bottom: 3px solid black;
   }
 }
 
@@ -125,9 +128,9 @@ body {
   }
   p {
     font-style: italic;
-    font-weight: 00i;
-    padding-top: 20px;
+    font-weight: 400;
     font-size: 24px;
+    padding-top: 20px;
     height: 150px;
     max-width: 500px;
     text-align: center;
@@ -199,17 +202,17 @@ body {
     }
     p {
       padding-bottom: 20px;
+
+      font-style: italic;
+      font-weight: 400;
     }
     img {
       // display: block;
-      width: 100px;
-      height: 100px;
+      // width: 150px;
+      // height: 100px;
+      width: 100%;
     }
 
-    .project-image {
-      width: 200px;
-      background-size: contain;
-    }
     button {
       cursor: pointer;
       padding: 10px;
@@ -223,4 +226,52 @@ body {
 
 .testing {
   transition: all 0.5s;
+}
+
+#contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-contact {
+    background-image: url(../assets/contact.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+
+    z-index: 1;
+    // box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+
+    .form-container {
+      // transform: translate(-70px, 20px);
+      position: relative;
+      left: -40px;
+      top: -100px;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 50%;
+    }
+    h1 {
+      font-size: 21px;
+    }
+
+    form {
+      input {
+        margin: 5px;
+        // width: 80%;
+        height: 20px;
+        padding: 10px 5px;
+        font-size: 18px;
+      }
+    }
+  }
 }

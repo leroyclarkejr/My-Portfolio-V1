@@ -15,12 +15,12 @@ const content = [
     background: "#bcced2",
   },
   {
-    copy: "Skilled in utilizing HTML5, CSS3,  & JavaScript ES6.",
+    copy: "Skilled in HTML5, CSS3,  & JavaScript ES6.",
     background: "#09678c",
   },
   {
     copy:
-      "Familiar with Bootstrap, SASS, JQuery, React.JS, NPM, Ruby on Rails, & Git, Sketch, Photoshop, & Visual Studio Code.",
+      "Familiar with Bootstrap, SASS, JQuery, React, Ruby on Rails, NPM, & Git.",
     background: "#fbf0cd",
   },
   {
