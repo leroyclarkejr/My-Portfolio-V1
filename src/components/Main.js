@@ -24,7 +24,7 @@ const content = [
     background: "#fbf0cd",
   },
   {
-    copy: "Inviting you to view his recent projects, here.",
+    copy: "Inviting you to view his recent projects, here",
     background: "#21dd9b",
   },
 ];
