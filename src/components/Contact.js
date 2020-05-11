@@ -7,23 +7,22 @@ const Contact = () => (
       <div class="form-container">
         <h1>Get In Touch</h1>
         <form>
-          <input
+          <input type="text" name="name" placeholder="Name" height="40px" />
+          <br></br>
+
+          <input type="email" name="email" placeholder="Email address" />
+          <br></br>
+
+          <textarea
             type="text"
-            name="name"
-            placeholder="Name"
-            size="20"
-            height="40px"
+            className="message"
+            name="message"
+            placeholder="Message..."
+            rows={3}
           />
           <br></br>
-
-          <input type="email" name="name" placeholder="Email address" />
-          <br></br>
-
-          <input type="textArea" name="name" placeholder="Message..." />
-          <br></br>
-
-          <input type="submit" value="Submit" />
         </form>
+        <input className="submit" type="submit" value="Submit" />
       </div>
     </div>
   </div>
