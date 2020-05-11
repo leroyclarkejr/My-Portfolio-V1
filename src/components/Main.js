@@ -24,7 +24,7 @@ const content = [
     background: "#fbf0cd",
   },
   {
-    copy: "Inviting you to view his recent projects, <a>here.</a>",
+    copy: "Inviting you to view his recent projects, here.",
     background: "#21dd9b",
   },
 ];
@@ -78,17 +78,6 @@ class Main extends React.Component {
     });
   }
 
-  // prevPage() {
-  //   console.log("it's working");
-  //   if (pageNumber < 0) {
-  //     pageNumber = content.length - 1;
-  //   }
-
-  //   this.setState({
-  //     content: `${content[pageNumber].copy}`,
-  //   });
-  // }
-
   componentDidMount() {
     VanillaTilt.init(document.querySelector(".main-content"), {
       max: 25,
@@ -115,12 +104,12 @@ class Main extends React.Component {
             alt="previous"
             onClick={this.prevPage}
           />
-          <img
+          {/* <img
             className="random larger"
             src={randomIcon}
             alt="random"
             onClick={this.updateContent}
-          />
+          /> */}
           <img
             className="next"
             src={nextIcon}
