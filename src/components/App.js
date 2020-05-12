@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { CSSTransition } from "react-transition-group";
 
 import Main from "./Main.js";
 import Projects from "./Projects.js";
@@ -19,30 +15,96 @@ class App extends React.Component {
     return (
       <Router>
         <div id="nav" className="">
-          <NavLink to="/" className="nav-links home nav-appear">
-            Home
+          <NavLink
+            className="nav-links home"
+            key="/"
+            to="/"
+            as={NavLink}
+            activeClassName="active"
+            exact
+          >
+            {"Home"}
           </NavLink>
 
-          <NavLink to="/projects" className="nav-links projects nav-appear">
-            Projects
+          <NavLink
+            key="/projects"
+            to="/projects"
+            as={NavLink}
+            className="nav-links projects "
+            activeClassName="active"
+            exact
+          >
+            {"Projects"}
           </NavLink>
 
-          <NavLink to="/contact" className="nav-links contact nav-appear">
-            Contact
+          <NavLink
+            key="/contact"
+            to="/contact"
+            as={NavLink}
+            className="nav-links contact "
+            activeClassName="active"
+            exact
+          >
+            {"Contact"}
           </NavLink>
-          <div className="nav-links social nav-appear">Social</div>
+          <div className="nav-links social">Social</div>
+        </div>
 
-          <Switch>
-            <Route exact path="/">
-              <Main />
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-          </Switch>
+        {/* <Switch> */}
+        {/* <Route exact path="/">
+            <Main />
+          </Route> */}
+        {/* <Route path="/projects">
+            <Projects />
+          </Route> */}
+        {/* <Route path="/contact">
+            <Contact />
+          </Route> */}
+
+        <div className="container">
+          <Route key="/projects" exact path="/projects">
+            {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div class="page">
+                  <Projects />
+                </div>
+              </CSSTransition>
+            )}
+          </Route>
+          <Route key="/contact" exact path="/contact">
+            {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div class="page">
+                  <Contact />
+                </div>
+              </CSSTransition>
+            )}
+          </Route>
+          <Route key="/" exact path="/">
+            {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={300}
+                classNames="page"
+                unmountOnExit
+              >
+                <div class="page">
+                  <Main />
+                </div>
+              </CSSTransition>
+            )}
+          </Route>
+          {/* </Switch> */}
         </div>
       </Router>
     );

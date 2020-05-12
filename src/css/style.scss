@@ -73,10 +73,12 @@ body {
   color: #011627;
   padding: 40px;
   cursor: pointer;
+  z-index: 10;
 }
 
 #nav {
   z-index: 10;
+
   .home {
     position: fixed;
     top: 0;
@@ -302,4 +304,41 @@ body {
       color: white;
     }
   }
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  position: absolute;
+  top: auto;
+  left: auto;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 100ms, transform 300ms;
 }

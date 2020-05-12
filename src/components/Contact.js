@@ -1,5 +1,5 @@
 import React from "react";
-import contactImg from "../assets/contact.png";
+// import contactImg from "../assets/contact.png";
 
 const Contact = () => (
   <div id="contact">
@@ -9,10 +9,8 @@ const Contact = () => (
         <form>
           <input type="text" name="name" placeholder="Name" height="40px" />
           <br></br>
-
           <input type="email" name="email" placeholder="Email address" />
           <br></br>
-
           <textarea
             type="text"
             className="message"

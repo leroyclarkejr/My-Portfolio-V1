@@ -3,7 +3,6 @@ import VanillaTilt from "vanilla-tilt";
 import me from "../assets/me.png";
 import prevIcon from "../assets/prev.png";
 import nextIcon from "../assets/next.png";
-import randomIcon from "../assets/shuffle.png";
 
 let pageNumber = 0;
 const bodyTag = document.querySelector("body");
@@ -12,11 +11,12 @@ const content = [
   //you can fill ARRAYS with OBJECTS by using curly brackets
   {
     copy: "A Front End Web Developer specializing in pixel perfect web design.",
-    background: "#bcced2",
+    background: "#09678c",
   },
   {
     copy: "Skilled in HTML5, CSS3,  & JavaScript ES6.",
-    background: "#09678c",
+
+    background: "#bcced2",
   },
   {
     copy:
@@ -87,7 +87,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="try">
         <div id="main-content" className="appear">
           <div className="main-content data-tilt">
             <img className="tilt-s" src={me} alt="Beautiful Leroy Clarke Jr." />
