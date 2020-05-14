@@ -6,7 +6,7 @@ import uova from "../assets/uova.png";
 import hexagons from "../assets/hexagons.png";
 import jiffy from "../assets/jiffy.png";
 import tokyo from "../assets/tokyo.png";
-import ja from "../assets/ja.png";
+import ja from "../assets/jamaica.png";
 import fur from "../assets/fur.png";
 
 const data = [
