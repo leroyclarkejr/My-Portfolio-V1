@@ -52,11 +52,11 @@ class App extends React.Component {
 
           <div className="nav-links social">
             <a href="https://github.com/ldcjrStudio">
-              <img src={github} />
+              <img src={github} alt="Github logo" />
             </a>
 
             <a href="https://www.linkedin.com/in/leroy-clarke-jr/">
-              <img src={linkedIn} />
+              <img src={linkedIn} alt="LinkedIn logo" />
             </a>
           </div>
         </div>

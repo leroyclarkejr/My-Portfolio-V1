@@ -1,10 +1,6 @@
 import React from "react";
 
 class Project extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   // openUrlLink() {
   //   window.open(`${this.props.url}`);
   // }
@@ -12,7 +8,11 @@ class Project extends React.Component {
   render() {
     return (
       <div className="main-projects data-tilt">
-        <img className="project-image tilt-m" src={this.props.image}></img>
+        <img
+          className="project-image tilt-m"
+          src={this.props.image}
+          alt="Home page of project"
+        ></img>
 
         <div className="content"></div>
         <h3 className="tilt-m">{this.props.title}</h3>

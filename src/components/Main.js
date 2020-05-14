@@ -5,11 +5,11 @@ import prevIcon from "../assets/prev.png";
 import nextIcon from "../assets/next.png";
 
 let pageNumber = 0;
-const currentDot = pageNumber;
-let i;
+// const currentDot = pageNumber;
+// let i;
 
 const bodyTag = document.querySelector("body");
-const dots = document.getElementsByClassName("dot");
+// const dots = document.getElementsByClassName("dot");
 
 const content = [
   //you can fill ARRAYS with OBJECTS by using curly brackets
