@@ -5,6 +5,8 @@ import { CSSTransition } from "react-transition-group";
 import Main from "./Main.js";
 import Projects from "./Projects.js";
 import Contact from "./Contact.js";
+import github from "../assets/github.png";
+import linkedIn from "../assets/linkedin.png";
 
 class App extends React.Component {
   // constructor(props) {
@@ -47,7 +49,15 @@ class App extends React.Component {
           >
             {"Contact"}
           </NavLink>
-          <div className="nav-links social">Social</div>
+
+          <div className="nav-links social">
+            <a href="https://github.com/ldcjrStudio">
+              <img src={github} />
+            </a>
+
+            <img src={linkedIn} />
+            <a></a>
+          </div>
         </div>
 
         {/* <Switch> */}

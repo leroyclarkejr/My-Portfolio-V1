@@ -10,7 +10,7 @@ const bodyTag = document.querySelector("body");
 const content = [
   //you can fill ARRAYS with OBJECTS by using curly brackets
   {
-    copy: "A Front End Web Developer specializing in pixel perfect web design.",
+    copy: "A Front End Web Developer specializing in  pixel perfect websites.",
     background: "#09678c",
   },
   {
@@ -34,7 +34,7 @@ class Main extends React.Component {
     super(props);
     this.state = {
       content:
-        "A Front End Web Developer specializing in pixel perfect web design.",
+        "A Front End Web Developer specializing in pixel perfect websites.",
     };
     this.updateContent = this.updateContent.bind(this);
     this.nextPage = this.nextPage.bind(this);

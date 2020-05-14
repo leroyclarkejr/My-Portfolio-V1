@@ -11,19 +11,25 @@ class Project extends React.Component {
 
   render() {
     return (
-      <div className="main-projects data-tilt project-card">
-        <img className="project-image tilt-s" src={this.props.image}></img>
+      <div className="main-projects data-tilt">
+        <img className="project-image tilt-m" src={this.props.image}></img>
 
         <div className="content"></div>
-        <h3 className="tilt-s">{this.props.title}</h3>
-        <p className="tilt-s">{this.props.description}</p>
+        <h3 className="tilt-m">{this.props.title}</h3>
+        <p className="tilt-m">{this.props.description}</p>
 
-        <div className="tilt-s cta">
-          <button onClick={() => window.open(`${this.props.url}`)}>
-            View Live Site
+        <div className="tilt-m cta">
+          <button
+            className="live-site"
+            onClick={() => window.open(`${this.props.url}`)}
+          >
+            Live Site
           </button>
-          <span>|</span>
-          <button onClick={() => window.open(`${this.props.code}`)}>
+
+          <button
+            className="source-code"
+            onClick={() => window.open(`${this.props.code}`)}
+          >
             Source Code
           </button>
         </div>
