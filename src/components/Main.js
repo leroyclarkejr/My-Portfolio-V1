@@ -5,7 +5,11 @@ import prevIcon from "../assets/prev.png";
 import nextIcon from "../assets/next.png";
 
 let pageNumber = 0;
+const currentDot = pageNumber;
+let i;
+
 const bodyTag = document.querySelector("body");
+const dots = document.getElementsByClassName("dot");
 
 const content = [
   //you can fill ARRAYS with OBJECTS by using curly brackets
@@ -25,7 +29,7 @@ const content = [
   },
   {
     copy: "Inviting you to view his recent projects, here",
-    background: "#21dd9b",
+    background: "#fdfffc",
   },
 ];
 
@@ -56,7 +60,19 @@ class Main extends React.Component {
 
     if (pageNumber > content.length - 1) {
       pageNumber = 0;
+      // currentDot = PageNumber;
     }
+
+    // if (currentDot > content.length - 1) {
+    //   currentDot = 0;
+    // }
+
+    // for (i = 0; i < dots.length; i++) {
+    // dots[i].className = dots[i].className.replace(" thisdot", "");
+    // }
+
+    // dots[pageNumber - 1].className += " thisdot";
+
     bodyTag.style.backgroundColor = content[pageNumber].background;
 
     this.setState({
@@ -67,10 +83,12 @@ class Main extends React.Component {
     console.log("its working");
 
     pageNumber = pageNumber - 1;
-
     if (pageNumber < 0) {
       pageNumber = content.length - 1;
     }
+    // if (currentDot < 0) {
+    //   currentDot = content.length - 1;
+    // }
     bodyTag.style.backgroundColor = content[pageNumber].background;
 
     this.setState({
@@ -84,6 +102,10 @@ class Main extends React.Component {
       speed: 400,
     });
   }
+
+  // function currentDiv(n) {
+  //   showDivs(slideIndex = n);
+  // }
 
   render() {
     return (
@@ -104,12 +126,12 @@ class Main extends React.Component {
             alt="previous"
             onClick={this.prevPage}
           />
-          {/* <img
-            className="random larger"
-            src={randomIcon}
-            alt="random"
-            onClick={this.updateContent}
-          /> */}
+          <div>
+            <span className="dot thisdot"></span>
+            <span className="dot"></span>
+            <span className="dot"></span>
+            <span className="dot"></span>
+          </div>
           <img
             className="next"
             src={nextIcon}

@@ -16,7 +16,7 @@ const Contact = () => (
             className="message"
             name="message"
             placeholder="Message..."
-            rows={3}
+            rows={1}
           />
           <br></br>
         </form>

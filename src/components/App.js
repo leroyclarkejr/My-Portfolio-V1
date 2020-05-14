@@ -55,8 +55,9 @@ class App extends React.Component {
               <img src={github} />
             </a>
 
-            <img src={linkedIn} />
-            <a></a>
+            <a href="https://www.linkedin.com/in/leroy-clarke-jr/">
+              <img src={linkedIn} />
+            </a>
           </div>
         </div>
 

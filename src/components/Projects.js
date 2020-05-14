@@ -50,8 +50,9 @@ const data = [
   {
     title: "Jiffy",
     description: "An application that uses Giphy API to search for GIFS.",
-    url: "https://github.com/ldcjrStudio/Jiffy",
-    code: "https://jiffy-api.netlify.app",
+    url: "https://jiffy-api.netlify.app",
+    code: "https://github.com/ldcjrStudio/Jiffy",
+
     image: jiffy,
   },
 ];
