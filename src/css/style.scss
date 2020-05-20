@@ -265,23 +265,25 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   .main-contact {
-    background-image: url(../assets/contact.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center bottom;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 600px;
+    flex-direction: column;
+    background-color: $white;
+    color: $dark-blue;
+    min-height: 400px;
+    // max-height: 60vh;
     min-width: 600px;
-
+    padding: 40px;
+    border-radius: 3px;
+    z-index: 1;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
     .form-container {
       position: relative;
-      left: -110px;
-      top: -130px;
+      // left: -110px;
+      // top: -130px;
     }
 
     img {
@@ -299,8 +301,8 @@ body {
 
       input {
         margin-bottom: 5px;
-        // width: 80%;
-        height: 20px;
+        width: 80%;
+        height: 40px;
         width: 100%;
         // padding: 10px 5px;
         background: none;
@@ -312,11 +314,11 @@ body {
         opacity: 0.3;
       }
       .message {
-        resize: none;
-        background: none;
-        border: none;
-        border-bottom: solid 2px $bleu;
-        outline: none;
+        // resize: none;
+        // background: none;
+        // border: none;
+        // border-bottom: solid 2px $bleu;
+        // outline: none;
       }
       .message::placeholder {
         opacity: 0.3;
