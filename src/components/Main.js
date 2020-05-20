@@ -108,7 +108,39 @@ class Main extends React.Component {
   // }
 
   render() {
-    return;
+    return (
+      <div class="try">
+        <div id="main-content" className="appear">
+          <div className="main-content data-tilt">
+            <img className="tilt-s" src={me} alt="Beautiful Leroy Clarke Jr." />
+            <h1 className="tilt-m">Leroy Clarke Jr. is...</h1>
+            <div className="content">
+              <p className="tilt-b">{this.state.content}</p>
+            </div>
+          </div>
+        </div>
+        <div id="navigation">
+          <img
+            className="prev"
+            src={prevIcon}
+            alt="previous"
+            onClick={this.prevPage}
+          />
+          <div>
+            <span className="dot thisdot"></span>
+            <span className="dot"></span>
+            <span className="dot"></span>
+            <span className="dot"></span>
+          </div>
+          <img
+            className="next"
+            src={nextIcon}
+            alt="next"
+            onClick={this.nextPage}
+          />
+        </div>
+      </div>
+    );
   }
 }
 
