@@ -5,6 +5,7 @@ import prevIcon from "../assets/prev.png";
 import nextIcon from "../assets/next.png";
 
 let pageNumber = 0;
+const dots = document.getElementsByClassName("dot");
 // const currentDot = pageNumber;
 // let i;
 
@@ -40,57 +41,46 @@ class Main extends React.Component {
       content:
         "A Front End Web Developer specializing in pixel perfect websites.",
     };
-    this.updateContent = this.updateContent.bind(this);
+
     this.nextPage = this.nextPage.bind(this);
     this.prevPage = this.prevPage.bind(this);
-  }
-
-  updateContent() {
-    console.log("it's working");
-
-    this.setState({
-      content: "It's working",
-    });
+    this.updateDot = this.prevPage.bind(this);
   }
 
   nextPage() {
-    console.log("its working");
-
     pageNumber = pageNumber + 1;
 
     if (pageNumber > content.length - 1) {
       pageNumber = 0;
-      // currentDot = PageNumber;
     }
-
-    // if (currentDot > content.length - 1) {
-    //   currentDot = 0;
-    // }
-
-    // for (i = 0; i < dots.length; i++) {
-    // dots[i].className = dots[i].className.replace(" thisdot", "");
-    // }
-
-    // dots[pageNumber - 1].className += " thisdot";
-
     bodyTag.style.backgroundColor = content[pageNumber].background;
-
     this.setState({
       content: `${content[pageNumber].copy}`,
     });
-  }
-  prevPage() {
-    console.log("its working");
+    if (pageNumber < 0) {
+      pageNumber = dots.length;
+    }
 
+    dots[pageNumber - 1].classList.remove("thisdot");
+    dots[pageNumber].classList.add("thisdot");
+  }
+
+  //   for (i = 0; i < content.length; i++) {
+  //     pageNumber[i].classList = "none";
+  //     //remove .active from all dots
+  //     y[i].classList.remove("thisdot");
+  //   }
+  //   x[slideIndex - 1].style.display = "block";
+  //   //add .active to the selected dot
+  //   y[slideIndex - 1].classList.add("thisdot");
+  // }
+
+  prevPage() {
     pageNumber = pageNumber - 1;
     if (pageNumber < 0) {
       pageNumber = content.length - 1;
     }
-    // if (currentDot < 0) {
-    //   currentDot = content.length - 1;
-    // }
     bodyTag.style.backgroundColor = content[pageNumber].background;
-
     this.setState({
       content: `${content[pageNumber].copy}`,
     });
@@ -126,7 +116,7 @@ class Main extends React.Component {
             alt="previous"
             onClick={this.prevPage}
           />
-          <div>
+          <div className="the-dots">
             <span className="dot thisdot"></span>
             <span className="dot"></span>
             <span className="dot"></span>
