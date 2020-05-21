@@ -58,11 +58,11 @@ class Main extends React.Component {
       content: `${content[pageNumber].copy}`,
     });
     if (pageNumber < 0) {
-      pageNumber = dots.length;
+      pageNumber = dots.length + 1;
     }
 
-    dots[pageNumber - 1].classList.remove("thisdot");
-    dots[pageNumber].classList.add("thisdot");
+    // dots[pageNumber - 1].classList.remove("thisdot");
+    // dots[pageNumber].classList.add("thisdot");
   }
 
   //   for (i = 0; i < content.length; i++) {
