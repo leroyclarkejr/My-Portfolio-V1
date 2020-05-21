@@ -386,7 +386,7 @@ body {
 
 // Tablet - 768 x 1024
 
-@media (min-width: 320px) {
+@media (min-width: 320px) (max-width: 400px) {
   #nav {
     .nav-links {
       font-size: 60px;
