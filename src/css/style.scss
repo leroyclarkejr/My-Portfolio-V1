@@ -390,6 +390,28 @@ body {
   }
 
   @media (min-width: 375px) and (max-width: 600px) {
+    #navigation {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      // position: fixed;
+      // top: 90%;
+      // left: 0;
+      img {
+        width: 50px;
+        margin: 0 10px 0 10px;
+      }
+    
+      // img.larger {
+      //   width: 60px;
+      // }
+      .dot {
+     
+        margin: 0 5px 0 5px;
+       
+      }
     #nav {
       .nav-links {
         padding: 10px;
