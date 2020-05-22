@@ -95,6 +95,7 @@ class Main extends React.Component {
       gyroscopeMaxAngleX: 45,
       gyroscopeMinAngleY: -45,
       gyroscopeMaxAngleY: 45,
+      gyroscopeSamples: 10,
     });
   }
 
