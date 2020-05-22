@@ -395,7 +395,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-    
+
       // position: fixed;
       // top: 90%;
       // left: 0;
@@ -403,20 +403,22 @@ body {
         width: 50px;
         margin: 0 10px 0 10px;
       }
-    
+
       // img.larger {
       //   width: 60px;
       // }
       .dot {
-     
         margin: 0 5px 0 5px;
-       
       }
+    }
+
     #nav {
       .nav-links {
         padding: 10px;
+        font-size: 21px;
       }
     }
+
     .main-content {
       padding: 20px;
       p {
