@@ -30,7 +30,7 @@ class Contact extends React.Component {
   // handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   componentDidMount() {
-    VanillaTilt.init(document.querySelectorAll(".main-content"), {
+    VanillaTilt.init(document.querySelectorAll(".main-contact"), {
       max: 25,
       speed: 400,
     });
@@ -42,9 +42,10 @@ class Contact extends React.Component {
       <div class="try">
         <div id="contact" className="appear">
           <div className="main-contact data-tilt">
-            <h1>Get in Touch</h1>
+            <h1 className="tilt-s">Get in Touch</h1>
 
             <Mailchimp
+              className="tilt-m"
               action="https://gmail.us19.list-manage.com/subscribe/post?u=1aec3676a5129a658a34bf752&amp;id=9d775d3c7a"
               fields={[
                 {

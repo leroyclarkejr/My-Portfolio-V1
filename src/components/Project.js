@@ -9,16 +9,16 @@ class Project extends React.Component {
     return (
       <div className="main-projects data-tilt">
         <img
-          className="project-image tilt-m"
+          className="project-image tilt-xs"
           src={this.props.image}
           alt="Home page of project"
         ></img>
 
         <div className="content"></div>
-        <h3 className="tilt-m">{this.props.title}</h3>
+        <h3 className="tilt-s">{this.props.title}</h3>
         <p className="tilt-m">{this.props.description}</p>
 
-        <div className="tilt-m cta">
+        <div className="tilt-b cta">
           <button
             className="live-site"
             onClick={() => window.open(`${this.props.url}`)}

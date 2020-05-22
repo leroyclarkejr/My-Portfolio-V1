@@ -22,7 +22,7 @@ class App extends React.Component {
             key="/"
             to="/"
             as={NavLink}
-            activeClassName="active"
+            activeClassName="selected"
             exact
           >
             {"Home"}
@@ -33,7 +33,7 @@ class App extends React.Component {
             to="/projects"
             as={NavLink}
             className="nav-links projects "
-            activeClassName="active"
+            activeClassName="selected"
             exact
           >
             {"Projects"}
@@ -44,7 +44,7 @@ class App extends React.Component {
             to="/contact"
             as={NavLink}
             className="nav-links contact "
-            activeClassName="active"
+            activeClassName="selected"
             exact
           >
             {"Contact"}

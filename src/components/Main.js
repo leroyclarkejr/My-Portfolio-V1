@@ -90,6 +90,11 @@ class Main extends React.Component {
     VanillaTilt.init(document.querySelector(".main-content"), {
       max: 25,
       speed: 400,
+      gyroscope: true,
+      gyroscopeMinAngleX: -45,
+      gyroscopeMaxAngleX: 45,
+      gyroscopeMinAngleY: -45,
+      gyroscopeMaxAngleY: 45,
     });
   }
 
