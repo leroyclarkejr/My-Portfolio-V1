@@ -26,11 +26,11 @@ const content = [
   {
     copy:
       "Familiar with Bootstrap, SASS, JQuery, React, Ruby on Rails, NPM, & Git.",
-    background: "#fbf0cd",
+    background: "#92BFB1",
   },
   {
     copy: "Inviting you to view his recent projects, here",
-    background: "#fdfffc",
+    background: " #fdfffc",
   },
 ];
 

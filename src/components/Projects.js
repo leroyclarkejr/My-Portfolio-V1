@@ -2,12 +2,12 @@ import React from "react";
 import VanillaTilt from "vanilla-tilt";
 import Project from "./Project";
 
-import uova from "../assets/uova.png";
-import hexagons from "../assets/hexagons.png";
-import jiffy from "../assets/jiffy.png";
-import tokyo from "../assets/tokyo.png";
-import ja from "../assets/jamaica.png";
-import fur from "../assets/fur.png";
+import uova from "../assets/uova.jpg";
+import hexagons from "../assets/hexagons.jpg";
+import jiffy from "../assets/jiffy.jpg";
+import tokyo from "../assets/tokyo.jpg";
+import ja from "../assets/jamaica.jpg";
+import fur from "../assets/fur.jpg";
 
 const data = [
   {

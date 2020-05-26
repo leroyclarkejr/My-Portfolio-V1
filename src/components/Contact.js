@@ -42,7 +42,7 @@ class Contact extends React.Component {
       <div class="try">
         <div id="contact" className="appear">
           <div className="main-contact data-tilt">
-            <h1 className="tilt-s">Get in Touch</h1>
+            <h1 className="tilt-s">Contact Leroy</h1>
 
             <Mailchimp
               className="tilt-m"
