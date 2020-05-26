@@ -12,7 +12,8 @@ import fur from "../assets/fur.jpg";
 const data = [
   {
     title: "Furneauxs",
-    description: "A mobile resonsive site created for an emerging flower shop.",
+    description:
+      "A mobile responsive site created for an emerging flower shop.",
     url: "https://ldcjrstudio.github.io/furneauxs/",
     code: "https://github.com/ldcjrStudio/furneauxs",
     image: fur,
