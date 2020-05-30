@@ -28,7 +28,7 @@ const data = [
   {
     title: "Day In Jamaica",
     description:
-      "Website showing pictures taken over a day in Montego Bay, Jamaica.",
+      "A showcase of photographs taken over a day in Montego Bay, Jamaica.",
     url: "https://dayinjamaica.netlify.app",
     code: "https://github.com/ldcjrStudio/Day-in-Jamaica",
     image: ja,
@@ -36,7 +36,7 @@ const data = [
   {
     title: "Uova",
     description:
-      "Restaurant created using Contentful API to fulfill their needs of an every changing menu.",
+      "A restaurant website created using Contentful API to fulfill their needs of an every changing menu.",
     url: "https://ldcjrstudio.github.io/Uova/",
     code: "https://github.com/ldcjrStudio/Uova",
     image: uova,
@@ -44,14 +44,15 @@ const data = [
   {
     title: "Lost In Tokyo",
     description:
-      "Directory of fun places to see, play in , and explore in Tokyo, Japan.",
+      "A directory of fun places to explore in Tokyo, Japan, created using React. js",
     url: "https://ldcjrstudio.github.io/Lost-in-Tokyo/",
     code: "https://github.com/ldcjrStudio/Lost-in-Tokyo",
     image: tokyo,
   },
   {
     title: "Jiffy",
-    description: "An application that uses Giphy API to search for GIFS.",
+    description:
+      "A web application created using React.js that uses Giphy API to search for GIFS.",
     url: "https://jiffy-api.netlify.app",
     code: "https://github.com/ldcjrStudio/Jiffy",
 
