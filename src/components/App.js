@@ -62,7 +62,9 @@ class App extends React.Component {
         </div>
 
         <div class="footer">
-          <footer>Designed & Developed by Leroy Clarke Jr.</footer>
+          {/* <footer>
+            Designed & Developed by Leroy Clarke Jr.
+          </footer> */}
         </div>
 
         <div className="container">
