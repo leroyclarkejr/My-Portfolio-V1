@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
+import ReactGA from "react-ga";
 
 import Main from "./Main.js";
 import Projects from "./Projects.js";
@@ -8,11 +9,10 @@ import Contact from "./Contact.js";
 import github from "../assets/github.png";
 import linkedIn from "../assets/linkedin.png";
 
-class App extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+ReactGA.initialize("UA-167200825-1");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
+class App extends React.Component {
   render() {
     return (
       <Router>
@@ -61,16 +61,9 @@ class App extends React.Component {
           </div>
         </div>
 
-        {/* <Switch> */}
-        {/* <Route exact path="/">
-            <Main />
-          </Route> */}
-        {/* <Route path="/projects">
-            <Projects />
-          </Route> */}
-        {/* <Route path="/contact">
-            <Contact />
-          </Route> */}
+        <div class="footer">
+          <footer>Designed & Developed by Leroy Clarke Jr.</footer>
+        </div>
 
         <div className="container">
           <Route key="/projects" exact path="/projects">
@@ -121,59 +114,4 @@ class App extends React.Component {
     );
   }
 }
-// function Home() {
-//   return (
-//     <div>
-//       <h2>Home</h2>
-//     </div>
-//   );
-// }
-
-// function Topics() {
-//   // The `path` lets us build <Route> paths that are
-//   // relative to the parent route, while the `url` lets
-//   // us build relative links.
-//   let { path, url } = useRouteMatch();
-
-//   return (
-//     <div>
-//       <h2>Topics</h2>
-//       <ul>
-//         <li>
-//           <NavLink to={`${url}/rendering`}>Rendering with React</NavLink>
-//         </li>
-//         <li>
-//           <NavLink to={`${url}/components`}>Components</NavLink>
-//         </li>
-//         <li>
-//           <NavLink to={`${url}/props-v-state`}>Props v. State</NavLink>
-//         </li>
-//       </ul>
-
-//       <Switch>
-//         <Route exact path={path}>
-//           <h3>Please select a topic.</h3>
-//         </Route>
-//         <Route path={`${path}/:topicId`}>
-//           <Topic />
-//         </Route>
-//       </Switch>
-//     </div>
-//   );
-// }
-
-// function Topic() {
-//   // The <Route> that rendered this component has a
-//   // path of `/topics/:topicId`. The `:topicId` portion
-//   // of the URL indicates a placeholder that we can
-//   // get from `useParams()`.
-//   let { topicId } = useParams();
-
-//   return (
-//     <div>
-//       <h3>{topicId}</h3>
-//     </div>
-//   );
-// }
-
 export default App;

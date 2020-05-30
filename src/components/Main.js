@@ -5,31 +5,29 @@ import prevIcon from "../assets/prev.png";
 import nextIcon from "../assets/next.png";
 
 let pageNumber = 0;
-const dots = document.getElementsByClassName("dot");
-// const currentDot = pageNumber;
-// let i;
+const dots = document.querySelectorAll(".dot");
 
 const bodyTag = document.querySelector("body");
-// const dots = document.getElementsByClassName("dot");
 
 const content = [
-  //you can fill ARRAYS with OBJECTS by using curly brackets
   {
-    copy: "A Front End Web Developer specializing in  pixel perfect websites.",
+    copy:
+      "A Front End Web Developer specializing in pixel perfect, responsive websites.",
     background: "#09678c",
   },
   {
-    copy: "Skilled in HTML5, CSS3,  & JavaScript ES6.",
+    copy: "Skilled in HTML5, CSS3, & JavaScript ES6.",
 
     background: "#bcced2",
   },
   {
-    copy:
-      "Familiar with Bootstrap, SASS, JQuery, React, Ruby on Rails, NPM, & Git.",
+    copy: "Familiar with Bootstrap, SASS, JQuery, React, APIs, NPM, and Git.",
     background: "#00A896",
   },
+
   {
-    copy: "Inviting you to view his recent projects, here",
+    copy:
+      "Eager to help bring your website ideas to life! Contact me today & lets create something great.",
     background: " #fdfffc",
   },
 ];
@@ -57,23 +55,11 @@ class Main extends React.Component {
     this.setState({
       content: `${content[pageNumber].copy}`,
     });
-    if (pageNumber < 0) {
-      pageNumber = dots.length + 1;
-    }
 
-    // dots[pageNumber - 1].classList.remove("thisdot");
+    // if (pageNumber < content.length)
+    //   dots[pageNumber - 1].classList.remove("thisdot");
     // dots[pageNumber].classList.add("thisdot");
   }
-
-  //   for (i = 0; i < content.length; i++) {
-  //     pageNumber[i].classList = "none";
-  //     //remove .active from all dots
-  //     y[i].classList.remove("thisdot");
-  //   }
-  //   x[slideIndex - 1].style.display = "block";
-  //   //add .active to the selected dot
-  //   y[slideIndex - 1].classList.add("thisdot");
-  // }
 
   prevPage() {
     pageNumber = pageNumber - 1;
@@ -98,10 +84,6 @@ class Main extends React.Component {
       gyroscopeSamples: 10,
     });
   }
-
-  // function currentDiv(n) {
-  //   showDivs(slideIndex = n);
-  // }
 
   render() {
     return (

@@ -78,6 +78,17 @@ p {
   }
 }
 
+.footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 10px;
+  background-color: rgba(9, 103, 140, 0.7);
+  padding: 5px 0 5px 0;
+}
+
 .main-content {
   display: flex;
   align-items: center;

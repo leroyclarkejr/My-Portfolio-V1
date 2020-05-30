@@ -73,8 +73,6 @@ class Projects extends React.Component {
   }
 
   render() {
-    // const { title, description, url, code } = this.props;
-
     return (
       <div id="projects">
         {data.map((data) => (

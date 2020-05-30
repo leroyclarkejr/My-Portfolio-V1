@@ -1,10 +1,6 @@
 import React from "react";
 
 class Project extends React.Component {
-  // openUrlLink() {
-  //   window.open(`${this.props.url}`);
-  // }
-
   render() {
     return (
       <div className="main-projects data-tilt">
