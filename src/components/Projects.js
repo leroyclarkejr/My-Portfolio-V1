@@ -6,7 +6,7 @@ import uova from "../assets/uova.jpg";
 import hexagons from "../assets/hexagons.jpg";
 import jiffy from "../assets/jiffy.jpg";
 import tokyo from "../assets/tokyo.jpg";
-import ja from "../assets/jamaica.jpg";
+// import ja from "../assets/jamaica.jpg";
 import fur from "../assets/fur.jpg";
 import bark from "../assets/barkgrr.jpg";
 import portfolio from "../assets/portfolio.jpg";
