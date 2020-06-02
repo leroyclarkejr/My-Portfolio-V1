@@ -39,8 +39,7 @@ class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      content:
-        "A Front End Web Developer specializing in pixel perfect websites.",
+      content: `${content[pageNumber].copy}`,
     };
 
     this.nextPage = this.nextPage.bind(this);
