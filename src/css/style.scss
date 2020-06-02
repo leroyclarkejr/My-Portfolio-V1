@@ -158,9 +158,9 @@ p {
     margin: 0 15px 0 15px;
   }
 
-  // img.larger {
-  //   width: 60px;
-  // }
+  .the-dots {
+    width: 100px;
+  }
   .dot {
     height: 7px;
     width: 7px;
@@ -169,9 +169,9 @@ p {
     border-radius: 50%;
     display: inline-block;
   }
-  .thisdot {
-    box-shadow: 0 0 10px 5px $green; /* inner white */
-  }
+  // .active {
+  //   box-shadow: 0 0 10px 5px $green; /* inner white */
+  // }
 }
 
 #projects {

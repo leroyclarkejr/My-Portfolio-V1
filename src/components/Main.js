@@ -3,9 +3,9 @@ import VanillaTilt from "vanilla-tilt";
 import me from "../assets/me.png";
 import prevIcon from "../assets/prev.png";
 import nextIcon from "../assets/next.png";
+import Dots from "react-carousel-dots";
 
 let pageNumber = 0;
-const dots = document.querySelectorAll(".dot");
 
 const bodyTag = document.querySelector("body");
 
@@ -14,11 +14,13 @@ const content = [
     copy:
       "A Front End Web Developer specializing in pixel perfect, responsive websites.",
     background: "#09678c",
+    dots: "",
   },
   {
     copy: "Skilled in HTML5, CSS3, & JavaScript ES6.",
 
     background: "#bcced2",
+    dots: "",
   },
   {
     copy: "Familiar with Bootstrap, SASS, JQuery, React, APIs, NPM, and Git.",
@@ -29,6 +31,7 @@ const content = [
     copy:
       "Eager to help bring your website ideas to life! Contact me today & lets create something great.",
     background: " #fdfffc",
+    dots: "",
   },
 ];
 
@@ -42,7 +45,6 @@ class Main extends React.Component {
 
     this.nextPage = this.nextPage.bind(this);
     this.prevPage = this.prevPage.bind(this);
-    this.updateDot = this.prevPage.bind(this);
   }
 
   nextPage() {
@@ -55,10 +57,6 @@ class Main extends React.Component {
     this.setState({
       content: `${content[pageNumber].copy}`,
     });
-
-    // if (pageNumber < content.length)
-    //   dots[pageNumber - 1].classList.remove("thisdot");
-    // dots[pageNumber].classList.add("thisdot");
   }
 
   prevPage() {
@@ -87,7 +85,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div class="try">
+      <div>
         <div id="main-content" className="appear">
           <div className="main-content data-tilt">
             <img className="tilt-s" src={me} alt="Beautiful Leroy Clarke Jr." />
@@ -104,11 +102,19 @@ class Main extends React.Component {
             alt="previous"
             onClick={this.prevPage}
           />
+
           <div className="the-dots">
-            <span className="dot thisdot"></span>
+            <Dots
+              length={4}
+              active={pageNumber}
+              visible={5}
+              size={7}
+              margin={10}
+            />
+            {/* <span className="dot"></span>
             <span className="dot"></span>
             <span className="dot"></span>
-            <span className="dot"></span>
+            <span className="dot"></span> */}
           </div>
           <img
             className="next"

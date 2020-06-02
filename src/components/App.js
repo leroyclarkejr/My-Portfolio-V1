@@ -61,11 +61,11 @@ class App extends React.Component {
           </div>
         </div>
 
-        <div class="footer">
-          {/* <footer>
+        {/* <div className="footer">
+          <footer>
             Designed & Developed by Leroy Clarke Jr.
-          </footer> */}
-        </div>
+          </footer>
+        </div> */}
 
         <div className="container">
           <Route key="/projects" exact path="/projects">
@@ -104,7 +104,7 @@ class App extends React.Component {
                 classNames="page"
                 unmountOnExit
               >
-                <div class="page">
+                <div className="page">
                   <Main />
                 </div>
               </CSSTransition>

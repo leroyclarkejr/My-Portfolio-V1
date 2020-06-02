@@ -44,7 +44,7 @@ const data = [
   {
     title: "Lost In Tokyo",
     description:
-      "A directory of fun places to explore in Tokyo, Japan, created using React. js",
+      "A directory of fun places to explore in Tokyo, Japan, created using React.js",
     url: "https://ldcjrstudio.github.io/Lost-in-Tokyo/",
     code: "https://github.com/ldcjrStudio/Lost-in-Tokyo",
     image: tokyo,
@@ -52,7 +52,7 @@ const data = [
   {
     title: "Jiffy",
     description:
-      "A web application created using React.js that uses Giphy API to search for GIFS.",
+      "A web application created using React.js that implements Giphy API to search for GIFS.",
     url: "https://jiffy-api.netlify.app",
     code: "https://github.com/ldcjrStudio/Jiffy",
 
