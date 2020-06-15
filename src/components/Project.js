@@ -21,13 +21,16 @@ class Project extends React.Component {
           >
             Live Site
           </button>
-
-          <button
-            className="source-code"
-            onClick={() => window.open(`${this.props.code}`)}
-          >
-            Source Code
-          </button>
+          {this.props.code ? (
+            <button
+              className="source-code"
+              onClick={() => window.open(`${this.props.code}`)}
+            >
+              Source Code
+            </button>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     );

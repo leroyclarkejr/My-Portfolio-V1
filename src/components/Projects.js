@@ -3,7 +3,7 @@ import VanillaTilt from "vanilla-tilt";
 import Project from "./Project";
 
 import uova from "../assets/uova.jpg";
-import hexagons from "../assets/hexagons.jpg";
+import tb from "../assets/blaction.jpg";
 import jiffy from "../assets/jiffy.jpg";
 import tokyo from "../assets/tokyo.jpg";
 // import ja from "../assets/jamaica.jpg";
@@ -19,21 +19,7 @@ const data = [
     code: "https://github.com/ldcjrStudio/furneauxs",
     image: fur,
   },
-  {
-    title: "Hexagons",
-    description: "Website created for a an upcoming band.",
-    url: "https://ldcjrstudio.github.io/Hexagons/",
-    code: "https://github.com/ldcjrStudio/Hexagons",
-    image: hexagons,
-  },
-  {
-    title: "BarkGrr",
-    description:
-      "Wordpress site created for an emerging start up. Bringing dogs & people together, all under one woof. ",
-    url: "https://barkgrrapp.com",
-    code: "",
-    image: bark,
-  },
+
   {
     title: "Uova",
     description:
@@ -57,6 +43,23 @@ const data = [
     url: "https://jiffy-api.netlify.app",
     code: "https://github.com/ldcjrStudio/Jiffy",
     image: jiffy,
+  },
+
+  {
+    title: "BarkGrr",
+    description:
+      "Wordpress site created for an emerging start up. Bringing dogs & people together, all under one woof. ",
+    url: "https://barkgrrapp.com",
+    code: "",
+    image: bark,
+  },
+  {
+    title: "Take Blaction",
+    description:
+      "Weblfow site serving as a collective of resources to help fight black justice.",
+    url: "https://takeblaction.com",
+    code: "",
+    image: tb,
   },
   {
     title: "My Portfolio Site",
