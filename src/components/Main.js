@@ -30,7 +30,7 @@ const content = [
   {
     copy:
       "Eager to help bring your website ideas to life! Contact me today & lets create something great.",
-    background: " #fdfffc",
+    background: " #6970B4",
     dots: "",
   },
 ];
