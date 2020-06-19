@@ -5,8 +5,6 @@ import Project from "./Project";
 import uova from "../assets/uova.jpg";
 import tb from "../assets/blaction.jpg";
 import jiffy from "../assets/jiffy.jpg";
-import tokyo from "../assets/tokyo.jpg";
-// import ja from "../assets/jamaica.jpg";
 import fur from "../assets/fur.jpg";
 import bark from "../assets/barkgrr.jpg";
 import portfolio from "../assets/portfolio.jpg";
@@ -28,14 +26,7 @@ const data = [
     code: "https://github.com/ldcjrStudio/Uova",
     image: uova,
   },
-  {
-    title: "Lost In Tokyo",
-    description:
-      "Directory of fun places to explore in Tokyo, Japan, created using React.js.",
-    url: "https://ldcjrstudio.github.io/Lost-in-Tokyo/",
-    code: "https://github.com/ldcjrStudio/Lost-in-Tokyo",
-    image: tokyo,
-  },
+
   {
     title: "Jiffy",
     description:
