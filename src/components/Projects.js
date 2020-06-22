@@ -21,7 +21,7 @@ const data = [
   {
     title: "Uova",
     description:
-      "Restaurant website created using Contentful API to fulfill their needs of an every changing menu.",
+      "Restaurant website created using Contentful API to fulfill their needs of an ever changing menu.",
     url: "https://ldcjrstudio.github.io/Uova/",
     code: "https://github.com/ldcjrStudio/Uova",
     image: uova,
@@ -47,7 +47,7 @@ const data = [
   {
     title: "Take Blaction",
     description:
-      "Weblfow site serving as a collective of resources to help fight black justice.",
+      "Webflow site serving as a collective of resources to help fight black justice.",
     url: "https://takeblaction.com",
     code: "",
     image: tb,
@@ -55,7 +55,7 @@ const data = [
   {
     title: "My Portfolio Site",
     description:
-      "Designed and developed by myself while making use of React.js, SASS, and NPM. ",
+      "Designed & developed by myself while making use of React.js, SASS, and NPM. ",
     url: "leroyclarkejr.com",
     code: "https://github.com/ldcjrStudio/My-Portfolio-V1",
     image: portfolio,
