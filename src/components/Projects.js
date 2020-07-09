@@ -16,6 +16,7 @@ const data = [
     url: "https://ldcjrstudio.github.io/furneauxs/",
     code: "https://github.com/ldcjrStudio/furneauxs",
     image: fur,
+    tech: "HTML, CSS3",
   },
 
   {
@@ -25,6 +26,7 @@ const data = [
     url: "https://ldcjrstudio.github.io/Uova/",
     code: "https://github.com/ldcjrStudio/Uova",
     image: uova,
+    tech: "HTML5, CSS3, JSON,",
   },
 
   {
@@ -34,15 +36,17 @@ const data = [
     url: "https://jiffy-api.netlify.app",
     code: "https://github.com/ldcjrStudio/Jiffy",
     image: jiffy,
+    tech: "HTML5, CSS3, Restful APIs",
   },
 
   {
-    title: "BarkGrr",
+    title: "BarkGrr App",
     description:
-      "Wordpress site created for an emerging start up. Bringing dogs & people together, all under one woof. ",
+      "An emerging social resource hub for dog owners created using the Gatsby.js framework.",
     url: "https://barkgrrapp.com",
     code: "",
     image: bark,
+    tech: "HTML5, CSS3, Javascript, React, Gatsby.JS, NPM",
   },
   {
     title: "Take Blaction",
@@ -55,10 +59,11 @@ const data = [
   {
     title: "My Portfolio Site",
     description:
-      "Designed & developed by myself while making use of React.js, SASS, and NPM. ",
+      "Designed & developed by ME while making use of React.js, SASS, and NPM. ",
     url: "leroyclarkejr.com",
     code: "https://github.com/ldcjrStudio/My-Portfolio-V1",
     image: portfolio,
+    tech: "HTML5, SASS, Javascript ES6, React.JS, NPM",
   },
 ];
 

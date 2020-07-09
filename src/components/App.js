@@ -25,7 +25,7 @@ class App extends React.Component {
             activeClassName="selected"
             exact
           >
-            {"Home"}
+            {"About"}
           </NavLink>
 
           <NavLink
