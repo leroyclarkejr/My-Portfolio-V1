@@ -4,6 +4,8 @@ import me from "../assets/me.png";
 import prevIcon from "../assets/prev.png";
 import nextIcon from "../assets/next.png";
 import Dots from "react-carousel-dots";
+import { helmetJsonLdProp } from "react-schemaorg";
+import Helmet from "react-helmet";
 
 let pageNumber = 0;
 
@@ -85,6 +87,33 @@ class Main extends React.Component {
   render() {
     return (
       <div>
+        <Helmet
+          script={[
+            helmetJsonLdProp({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Drug",
+                  name: "DRUG NAME",
+                  alternativeName: "avatromasdf",
+                  manufacturuer: {
+                    "@type": "organization",
+                    name: "Pharmaceuticals",
+                  },
+                  dosageForm: "eg. tablet",
+                  drugUnit: "akldfjalskdjfaskdf",
+                },
+                {
+                  "@type": "WebSite",
+                  about: {
+                    "@type": "Thing",
+                    description: "aksdfjadskjfal ksdfjad.",
+                  },
+                },
+              ],
+            }),
+          ]}
+        ></Helmet>
         <div id="main-content" className="appear">
           <div className="main-content data-tilt">
             <img className="tilt-s" src={me} alt="Beautiful Leroy Clarke Jr." />

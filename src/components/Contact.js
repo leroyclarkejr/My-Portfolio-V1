@@ -10,6 +10,8 @@ class Contact extends React.Component {
       speed: 400,
     });
   }
+  // On Tap - Navigation
+
 
   render() {
     return (
