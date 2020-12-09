@@ -105,10 +105,19 @@ class Main extends React.Component {
                 },
                 {
                   "@type": "MedicalAudience",
-                  audienceType: "lakjsdfjsdkfjslkfj",
+                  audienceType: "ITP",
                   healthCondition: {
                     "@type": "MedicalCondition",
-                    alternateName: "jioasdifjaosidjf",
+                    alternateName: "ITP condition",
+                  },
+                  requiredMinAge: "18",
+                },
+                {
+                  "@type": "MedicalAudience",
+                  audienceType: "CLD",
+                  healthCondition: {
+                    "@type": "MedicalCondition",
+                    alternateName: "CLD condition",
                   },
                   requiredMinAge: "18",
                 },
