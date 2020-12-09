@@ -106,8 +106,10 @@ class Main extends React.Component {
                 {
                   "@type": "WebSite",
                   about: {
+                    "@type": "Thing",
                     description: "aksdfjadskjfal ksdfjad.",
                   },
+                  url: { "@type": "Thing", url: "https://google.com" },
                 },
                 {
                   "@type": "Brand",
