@@ -133,6 +133,10 @@ class Main extends React.Component {
                     description:
                       "Adverse reactions with a rquesnaklsdjfaksdflj asdlkf. [this, is , a list, of stuff]",
                   },
+                  adverseOutcome: {
+                    "@type": "MedicalEntity",
+                    description: "anothe desc",
+                  },
                 },
               ],
             }),
