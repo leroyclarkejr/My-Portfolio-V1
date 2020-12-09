@@ -94,13 +94,13 @@ class Main extends React.Component {
               "@graph": [
                 {
                   "@type": "Drug",
-                  name: "DRUG NAME",
-                  alternativeName: "avatromasdf",
+                  name: "avaasdfas",
+                  alternateName: "avatromasdf",
                   manufacturuer: {
                     "@type": "organization",
                     name: "Pharmaceuticals",
                   },
-                  dosageForm: "eg. tablet",
+                  dosageForm: "Pill",
                   drugUnit: "akldfjalskdjfaskdf",
                 },
                 {
@@ -108,6 +108,18 @@ class Main extends React.Component {
                   about: {
                     "@type": "Thing",
                     description: "aksdfjadskjfal ksdfjad.",
+                  },
+                },
+                {
+                  "@type": "Brand",
+                  logo: "URL for logo",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  seriousAdverseOutcome: {
+                    "@type": "MedicalEntity",
+                    description:
+                      "Adverse reactions with a rquesnaklsdjfaksdflj asdlkf. [this, is , a list, of stuff]",
                   },
                 },
               ],
