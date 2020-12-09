@@ -104,6 +104,15 @@ class Main extends React.Component {
                   drugUnit: "akldfjalskdjfaskdf",
                 },
                 {
+                  "@type": "MedicalAudience",
+                  audienceType: "lakjsdfjsdkfjslkfj",
+                  healthCondition: {
+                    "@type": "MedicalCondition",
+                    alternateName: "jioasdifjaosidjf",
+                  },
+                  requiredMinAge: "18",
+                },
+                {
                   "@type": "WebSite",
                   about: {
                     "@type": "Thing",
