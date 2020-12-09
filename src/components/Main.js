@@ -106,7 +106,6 @@ class Main extends React.Component {
                 {
                   "@type": "WebSite",
                   about: {
-                    "@type": "Thing",
                     description: "aksdfjadskjfal ksdfjad.",
                   },
                 },
