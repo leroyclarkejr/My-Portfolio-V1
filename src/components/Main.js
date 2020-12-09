@@ -96,7 +96,7 @@ class Main extends React.Component {
                   "@type": "Drug",
                   name: "avaasdfas",
                   alternateName: "avatromasdf",
-                  manufacturuer: {
+                  manufacturer: {
                     "@type": "organization",
                     name: "Pharmaceuticals",
                   },
