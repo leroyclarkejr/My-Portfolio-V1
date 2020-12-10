@@ -2,6 +2,8 @@ import React from "react";
 import VanillaTilt from "vanilla-tilt";
 
 import Mailchimp from "react-mailchimp-form";
+import { helmetJsonLdProp } from "react-schemaorg";
+import Helmet from "react-helmet";
 
 class Contact extends React.Component {
   componentDidMount() {
