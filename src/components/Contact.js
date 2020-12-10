@@ -68,23 +68,27 @@ class Contact extends React.Component {
                 },
                 {
                   "@type": "FAQPage",
-                  mainEntity: [{
-                    "@type": "Question",
-                    name: "Question 1",
-                    text: "THE questoin",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "this is athe answer to the question",
-                    }},{
-                    "@type": "Question",
-                    name: "Questoin 2",
-                    text: "The second question",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "this is sdfsdfsdathe answer to the question",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "Question 1",
+                      text: "THE questoin",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "this is athe answer to the question",
+                      },
                     },
-                  },
+                    {
+                      "@type": "Question",
+                      name: "Questoin 2",
+                      text: "The second question",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "this is sdfsdfsdathe answer to the question",
+                      },
+                    },
                   ],
+                },
               ],
             }),
           ]}
