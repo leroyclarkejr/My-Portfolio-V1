@@ -124,7 +124,7 @@ class Main extends React.Component {
                   audienceType:
                     "Patients with chronic immune thrombocytopenia when other treatments have not worked well enough.Patients long-lasting (chronic) liver disease who are scheduled to have a medical or dental procedure.",
                   healthCondition: {
-                    "@type": "Medical Condition",
+                    "@type": "MedicalCondition",
                     alternateName:
                       "Immune Thrombocytopenia (ITP) and Chronic Liver Disease (CLD)",
                   },

@@ -68,11 +68,19 @@ class Contact extends React.Component {
                 },
                 {
                   "@type": "FAQPage",
-                  question: {
+                  mainEntity: {
                     "@type": "Question",
                     name: "What if I miss a dose?",
-                    answer:
-                      "If you miss a dose of Doptelet, take it as soon as you remember. Do not take 2 doses at once to make up for missing a dose. Take your next dose at your usual time.",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "this is athe answer to the question",
+                    },
+                    "@type": "Question",
+                    name: "What if I manother on?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "this is sdfsdfsdathe answer to the question",
+                    },
                   },
                 },
               ],
