@@ -94,49 +94,60 @@ class Main extends React.Component {
               "@graph": [
                 {
                   "@type": "Drug",
-                  name: "avaasdfas",
-                  alternateName: "avatromasdf",
+                  name: "Doptelet",
+                  alternateName: "avatrombopag",
                   manufacturer: {
-                    "@type": "organization",
-                    name: "Pharmaceuticals",
+                    "@type": "Organization",
+                    name: "Dova Pharmaceuticals",
                   },
                   dosageForm: "Pill",
-                  drugUnit: "akldfjalskdjfaskdf",
                 },
-                {
-                  "@type": "MedicalAudience",
-                  audienceType: "ITP",
-                  audienceTYpe: "CLD",
-                  healthCondition: {
-                    "@type": "MedicalCondition",
-                    alternateName: "ITP condition",
-                  },
-                  requiredMinAge: "18",
-                },
-
                 {
                   "@type": "WebSite",
                   about: {
                     "@type": "Thing",
-                    description: "aksdfjadskjfal ksdfjad.",
+                    description:
+                      "To inform patients of Doptelet (avatrombopag), a prescription medicine used to treat low blood platelet counts in adults with chronic immune thrombocytopenia when other treatments have not worked well enough. Doptelet (avatrombopag) is also a prescription medicine used to treat low blood platelet counts in adults with long-lasting (chronic) liver disease who are scheduled to have a medical or dental procedure.",
                   },
-                  url: "https://google.com",
+                  url: "https://doptelethcp.com/",
                 },
                 {
                   "@type": "Brand",
-                  logo: "URL for logo",
+                  logo: "DOPTELET LOGO URL TBD",
+                },
+                {
+                  "@type": "Brand",
+                  logo: "DOVA PHARMACEUTICALS LOGO URL TBD",
+                },
+                {
+                  "@type": "MedicalAudience",
+                  audienceType:
+                    "Patients with chronic immune thrombocytopenia when other treatments have not worked well enough.Patients long-lasting (chronic) liver disease who are scheduled to have a medical or dental procedure.",
+                  healthCondition: {
+                    "@type": "Medical Condition",
+                    alternateName:
+                      "Immune Thrombocytopenia (ITP) and Chronic Liver Disease (CLD)",
+                  },
+                  requiredMinAge: "18",
                 },
                 {
                   "@type": "MedicalTherapy",
                   seriousAdverseOutcome: {
                     "@type": "MedicalEntity",
                     description:
-                      "Adverse reactions with a rquesnaklsdjfaksdflj asdlkf. [this, is , a list, of stuff]",
+                      "DOPTELET may cause serious side effects, including blood clots. People with chronic liver disease or chronic immune thrombocytopenia and people with certain blood clotting conditions may have an increased risk of developing blood clots. Tell your healthcare provider right away if you have signs and symptoms of a blood clot, including:, Swelling, pain, or tenderness in your legs, Shortness of breath, Chest pain, Fast heartbeat, Stomach (abdominal) pain or tenderness.",
                   },
-                  adverseOutcome: {
-                    "@type": "MedicalEntity",
-                    description: "anothe desc",
-                  },
+                },
+
+                {
+                  "@type": "SideEffectsHealthAspect",
+                  name:
+                    "The most common side effects of DOPTELET when used to treat low blood platelet counts in adults with chronic immune thrombocytopenia (ITP) are: headache, tiredness, bruising, nosebleed, upper-respiratory tract infection, joint pain, gum bleeding, purple or red spots on your skin, runny nose",
+                },
+                {
+                  "@type": "SideEffectsHealthAspect",
+                  name:
+                    "The most common side effects of DOPTELET in people with chronic liver disease are: fever, stomach (abdominal) pain, nausea, headache, tiredness, swelling of the hands or feet",
                 },
               ],
             }),

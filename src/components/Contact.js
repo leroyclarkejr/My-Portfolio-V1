@@ -12,10 +12,71 @@ class Contact extends React.Component {
   }
   // On Tap - Navigation
 
-
   render() {
     return (
       <div class="try">
+        <Helmet
+          script={[
+            helmetJsonLdProp({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Drug",
+                  name: "Doptelet",
+                  alternateName: "avatrombopag",
+                  manufacturer: {
+                    "@type": "Organization",
+                    name: "Dova Pharmaceuticals",
+                  },
+                  dosageForm: "Pill",
+                  drugUnit:
+                    "Doptelet is a 20 mg pill taken with any food. Your doctor will decide how much Doptelet you need to take, and for how long, based on your unique platelet count. You and your doctor can work together to set your treatment goal with Doptelet.",
+                },
+                {
+                  "@type": "WebSite",
+                  about: {
+                    "@type": "Thing",
+                    description:
+                      "To inform patients of Doptelet (avatrombopag), a prescription medicine used to treat low blood platelet counts in adults with chronic immune thrombocytopenia when other treatments have not worked well enough. Doptelet (avatrombopag) is also a prescription medicine used to treat low blood platelet counts in adults with long-lasting (chronic) liver disease who are scheduled to have a medical or dental procedure.",
+                  },
+                  url: "https://doptelethcp.com/itp/doptelet-dosing/",
+                },
+                {
+                  "@type": "Brand",
+                  logo: "DOPTELET LOGO URL TBD",
+                },
+                {
+                  "@type": "Brand",
+                  logo: "DOVA PHARMACEUTICALS LOGO URL TBD",
+                },
+                {
+                  "@type": "MedicalAudience",
+                  audienceType:
+                    "Patients with chronic immune thrombocytopenia when other treatments have not worked well enough. ",
+                  healthCondition: {
+                    "@type": "Medical Condition",
+                    alternateName: "Immune Thrombocytopenia (ITP)",
+                  },
+                  requiredMinAge: "18",
+                },
+                {
+                  "@type": "SideEffectsHealthAspect",
+                  name:
+                    "The most common side effects of DOPTELET when used to treat low blood platelet counts in adults with chronic immune thrombocytopenia (ITP) are: headache, tiredness, bruising, nosebleed, upper-respiratory tract infection, joint pain, gum bleeding, purple or red spots on your skin, runny nose",
+                },
+                {
+                  "@type": "FAQPage",
+                  question: {
+                    "@type": "Question",
+                    name: "What if I miss a dose?",
+                    answer:
+                      "If you miss a dose of Doptelet, take it as soon as you remember. Do not take 2 doses at once to make up for missing a dose. Take your next dose at your usual time.",
+                  },
+                },
+              ],
+            }),
+          ]}
+        ></Helmet>
         <div id="contact" className="appear">
           <div className="main-contact data-tilt">
             <h1 className="tilt-s">Contact Leroy</h1>
