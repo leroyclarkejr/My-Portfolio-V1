@@ -56,7 +56,7 @@ class Contact extends React.Component {
                   audienceType:
                     "Patients with chronic immune thrombocytopenia when other treatments have not worked well enough. ",
                   healthCondition: {
-                    "@type": "Medical Condition",
+                    "@type": "MedicalCondition",
                     alternateName: "Immune Thrombocytopenia (ITP)",
                   },
                   requiredMinAge: "18",
