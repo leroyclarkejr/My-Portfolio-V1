@@ -152,7 +152,9 @@ class Main extends React.Component {
               ],
             }),
           ]}
-        ></Helmet>
+        >
+          <title>2This should overide but lets see</title>
+        </Helmet>
         <div id="main-content" className="appear">
           <div className="main-content data-tilt">
             <img className="tilt-s" src={me} alt="Beautiful Leroy Clarke Jr." />

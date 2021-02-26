@@ -92,7 +92,9 @@ class Contact extends React.Component {
               ],
             }),
           ]}
-        ></Helmet>
+        >
+          <title>This should overide but lets see</title>
+        </Helmet>
         <div id="contact" className="appear">
           <div className="main-contact data-tilt">
             <h1 className="tilt-s">Contact Leroy</h1>
